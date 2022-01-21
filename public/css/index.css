@@ -1,0 +1,487 @@
+/* 手機電腦共用 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap');
+
+header,nav,
+footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+section,
+button,
+ul,
+ol,
+li,
+a,
+p {
+    margin: 0;
+    padding: 0;
+    /* margin: auto; */
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    display: block;
+    line-height: 1.5rem;
+    color: #373839;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.mb-1 {
+    padding-bottom: 1.5rem;
+}
+
+.mb-2 {
+    padding-bottom: 1.5rem;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    background-color: #d2a36b;
+    width: 100%;
+    color: white;
+    font-size: 0.9rem;
+    padding: 50px 0;
+}
+
+footer>ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer li {
+    padding: 10px;
+}
+
+footer p {
+    text-align: center;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+/* 手機電腦共用 end */
+
+
+/* 手機版 */
+.container {
+    margin: auto;
+    width: 90%;
+    text-align: center;
+}
+
+section {
+    padding: 60px 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+    font-weight: 100;
+}
+
+h3 {
+    padding-bottom: 40px;
+    color: #d2a36b;
+    font-weight: 400;
+}
+
+p {
+    padding-bottom: 10px;
+    text-align: start;
+}
+
+
+/* 導覽列 */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    z-index: 999;
+}
+
+header>.container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo {
+    height: 60px;
+    width: 70%;
+    background-image: url(../images/lovemologo-web.svg);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.menu-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url(../images/menu-icon.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all .3s;
+}
+
+.menu-icon.active {
+    background-image: url(../images/menu-icon-close.svg);
+}
+
+nav ul {
+    display: none;
+    justify-content: space-evenly;
+    background-color: #fff;
+}
+
+nav li {
+    padding: 12px 20px;
+    transition: .5s;
+}
+
+nav a {
+    /* display: block; */
+    width: auto;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #373839;
+    font-weight: 500;
+    border-bottom: 2px solid #d2a36b
+}
+
+/* banner */
+
+
+
+/*關於樂毛*/
+
+.featurebox {
+    background-color: #d2a36b;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.f-item {
+    width: 70%;
+    padding-bottom: 15%;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.f-item img {
+    width: 45%;
+    padding: 50px 20px 5px 20px;
+}
+
+
+/* 服務說明 */
+#serbox .txtbox {
+    text-align: start;
+}
+
+#serbox .imgbox {
+    width: 100%;
+}
+
+#serbox .imgbox>img {
+    width: 100%;
+}
+
+
+/* 美容小教室 */
+.card {
+    margin: 20px 0;
+    border: 1px solid #373839;
+}
+
+.card>img {
+    width: 100%;
+}
+
+
+/* 按鈕 */
+button {
+    background-color: rgba(255, 255, 255, 0);
+    border: 0px solid;
+    margin: 50px 0px;
+    padding: 0px;
+}
+
+button a {
+    border-bottom: 2px solid #d2a36b;
+    position: relative;
+    width: 130px;
+    text-align: start;
+    display: block;
+    color: #373839;
+}
+
+button a::after {
+    content: url(../images/arrow.svg);
+    position: absolute;
+    top: 0;
+    right: 0px;
+}
+
+#prev, #next{
+    display: none;
+}
+
+/* 電腦版 */
+@media screen and (min-width:768px) {
+
+    .container {
+        margin: auto;
+        width: 90%;
+        text-align: start;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .row,
+    .box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    /* 導覽列 */
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.98);
+        z-index: 999;
+    }
+
+    header>.container-fluid {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .logo {
+        height: 90px;
+        width: 30%;
+        background-image: url(../images/lovemologo-web.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .menu-icon.active {
+        background-image: url(../images/menu-icon-close.svg);
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #fff;
+    }
+
+
+    /* banner */
+
+    /*關於樂毛*/
+    
+    .lovemo>.container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .imgbox,.txtbox {
+        max-width: 35%;
+    }
+
+    .featurebox {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .f-item {
+        width: 25%;
+        padding-bottom: 6%;
+        margin: 20px auto;
+        background-color: #fff;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+    .f-item img {
+        width: 45%;
+        padding: 50px 20px 5px 20px;
+    }
+
+
+    /* 服務說明 */
+    #service .txtbox {
+        text-align: start;
+    }
+
+    #serbox{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #serbox .txtbox {
+        min-width: 45%;
+    }
+
+    #serbox .imgbox {
+        min-width: 45%;
+    }
+
+    #serbox .imgbox>img {
+        min-width: 50%;
+    }
+
+
+    #service{
+        display: flex;
+        justify-content: space-between;
+    }
+    #service p{
+        width: 65%;
+        padding-top: 10px;
+    }
+
+    /* 價目表 */
+    #price{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #price p{
+        width: 65%;
+        padding-top: 10px;
+    }
+    .imgboxprice{
+        width: 100%;
+    }
+    #pricepic{
+        width: 100%;
+    }
+
+    /* 預約 */
+    #reservation{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #reservation p{
+        width: 65%;
+        padding-top: 10px;
+    }
+
+    /* 美容小教室 */
+   
+
+    .card>img {
+        width: 100%;
+    }
+
+    #cardslide{
+        max-width: 90%;
+        overflow: hidden;
+        position: relative;
+        padding-bottom: 60px;
+    }
+    
+    .card-group{
+        width: calc(340px*6);
+        margin-left:-300px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 300px;
+        margin: 20px 10px;
+        border: 1px solid #373839;
+    }
+
+    #prev,#next{
+        display: block;
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        bottom: -5%;
+        position: absolute;
+        border:none;
+        background: transparent;
+        cursor: pointer;
+        background-color: #373839;
+        color:white;
+    }
+    
+    #prev{
+        left: 0px;
+    }
+    
+    #next{
+        right: 0px;
+    }
+
+
+    /* 按鈕 */
+    button {
+        background-color: rgba(255, 255, 255, 0);
+        border: 0px solid;
+        margin: 50px 0px;
+        padding: 0px;
+    }
+
+    button a {
+        border-bottom: 2px solid #d2a36b;
+        position: relative;
+        width: 130px;
+        text-align: start;
+        display: block;
+        color: #373839;
+    }
+
+    button a::after {
+        content: url(../images/arrow.svg);
+        position: absolute;
+        top: 0;
+        right: 0px;
+    }
+
+
+}
