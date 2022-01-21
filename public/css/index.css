@@ -99,12 +99,13 @@ h2 {
 h3 {
     padding-bottom: 40px;
     color: #d2a36b;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 p {
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
     text-align: start;
+    font-weight: 300;
 }
 
 
@@ -294,7 +295,7 @@ button a::after {
         height: 90px;
         width: 30%;
         background-image: url(../images/lovemologo-web.svg);
-        background-size: 100%;
+        background-size: 90%;
         background-repeat: no-repeat;
         background-position: left center;
     }
@@ -378,7 +379,7 @@ button a::after {
     }
     #service p{
         width: 65%;
-        padding-top: 10px;
+        /* padding-top: 10px; */
     }
 
     /* 價目表 */
@@ -389,7 +390,7 @@ button a::after {
 
     #price p{
         width: 65%;
-        padding-top: 10px;
+        /* padding-top: 10px; */
     }
     .imgboxprice{
         width: 100%;
@@ -406,7 +407,7 @@ button a::after {
 
     #reservation p{
         width: 65%;
-        padding-top: 10px;
+        /* padding-top: 10px; */
     }
 
     /* 美容小教室 */

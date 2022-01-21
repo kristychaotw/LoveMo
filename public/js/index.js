@@ -39,11 +39,11 @@ $(".menu-icon").on("click",function(){
 $(".card:last-child").clone().prependTo(".card-group")
 $(".card").eq(1).clone().appendTo(".card-group")
 
-let currentSlideOffset = -300
+let currentSlideOffset = -320
 
 function next(){
     // 輪播的座標累減子項目寬度
-    currentSlideOffset = currentSlideOffset - 300
+    currentSlideOffset = currentSlideOffset - 320
     console.log(currentSlideOffset);
     //    第二層左邊界位移數字等同於currentSlideOffset
 
@@ -55,15 +55,15 @@ function next(){
         //callback
         $(".card-group").animate({"margin-left": currentSlideOffset},400,function(){
             //動畫執行完才執行
-            $(".card-group").css({"margin-left":-300})
+            $(".card-group").css({"margin-left":-320})
         })
-        currentSlideOffset = -300
+        currentSlideOffset = -320
     }//if currentSlideOffset end 
 }//#next click end
 
 function prev(){
     // 輪播的座標累加子項目寬度
-    currentSlideOffset = currentSlideOffset + 300
+    currentSlideOffset = currentSlideOffset + 320
     console.log(currentSlideOffset)
    
     if (currentSlideOffset == 0){
