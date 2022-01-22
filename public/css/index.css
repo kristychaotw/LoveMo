@@ -22,6 +22,10 @@ p {
     text-decoration: none;
 }
 
+.avoid-header{
+    margin-top: 90px;
+}
+
 li {
     list-style-type: none;
 }
