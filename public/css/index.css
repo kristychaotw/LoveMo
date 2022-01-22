@@ -534,7 +534,7 @@ input{
 }
 
 @media screen and (min-width:768px) {
-    .rs-s2>.container,.rs-s3>.container{
+    .rs-s2,.rs-s3>.container{
         display: flex;
         justify-content:space-between;
     }
@@ -552,6 +552,33 @@ input{
     }
     .rs-form p{
         padding-left: 80px;
+    }
+}
+
+/* 分頁-價目表 */
+
+span{
+    color:#d2a36b;
+    font-size: 500;
+}
+
+#pricemb{
+    border: 1px solid #d2a36b;
+}
+
+
+@media screen and (min-width:768px) {
+    .sv-s2, .sv-s3{
+        display: flex;
+        justify-content:space-between;
+    }
+
+    .sv-s2 .sv-info2,.sv-s3 .imgbox{
+        width: 60%;
+    }
+
+    .sv-s2 .sv-info,.sv-s3 .p{
+        width: 30%;
     }
 
 }
