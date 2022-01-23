@@ -38,9 +38,10 @@ li a {
 }
 
 body {
-    font-size: 16px;
+    font-size: 17px;
     font-family: 'Noto Sans TC', sans-serif;
-    color:#373839
+    color:#373839;
+    letter-spacing: 0.1vw;
 }
 
 .mb-1 {
@@ -143,6 +144,10 @@ header>.container {
     background-position: left center;
 }
 
+.logo>a{
+    display: block;
+}
+
 .menu-icon {
     position: absolute;
     right: 0;
@@ -175,7 +180,7 @@ nav a {
     /* display: block; */
     width: auto;
     line-height: 3rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
     color: #373839;
     font-weight: 500;
@@ -251,6 +256,7 @@ button a {
     text-align: start;
     display: block;
     color: #373839;
+    font-size: 1rem;
 }
 
 button a::after {
@@ -507,7 +513,7 @@ button a::after {
 }
 
 form{
-    border: 1px solid #373839;
+    border: 1px solid #d2a36b;
     padding:60px 40px 20px 40px;
     text-align: center;
 }
@@ -528,6 +534,10 @@ input{
     margin:30px 0 20px 0;
 }
 
+.qrcode{
+    border: 1px solid #d2a36b;
+}
+
 .qrcode>img{
     width: 100%;
     max-width: 300px;
@@ -539,16 +549,18 @@ input{
         justify-content:space-between;
     }
 
-    .rs-s2 .imgbox,.rs-s3 .imgbox{
-        width: 60%;
+    .rs-s2 img,.rs-s3 form{
+        width: 50%;
     }
 
     .rs-s2 .titlegroup,.rs-s3 .titlegroup{
         width: 30%;
     }
-    .qrcode>img{
-        width: 100%;
-        max-width: 400px;
+
+    
+    .rs-s2 img{
+        max-width: 350px;
+        border: 1px solid #d2a36b;
     }
     .rs-form p{
         padding-left: 80px;
@@ -566,6 +578,10 @@ span{
     border: 1px solid #d2a36b;
 }
 
+.sv-s2 img, .sv-s3 img{
+    width: 100%;
+    border: 1px solid #d2a36b;
+}
 
 @media screen and (min-width:768px) {
     .sv-s2, .sv-s3{
@@ -573,12 +589,17 @@ span{
         justify-content:space-between;
     }
 
-    .sv-s2 .sv-info2,.sv-s3 .imgbox{
-        width: 60%;
+    .sv-s2 img,.sv-s3 img{
+        width: 50%;
     }
 
-    .sv-s2 .sv-info,.sv-s3 .p{
-        width: 30%;
+    .sv-info2{
+        width: 50%;
     }
 
+    .sv-s2 img, .sv-s3 img{
+        width: 35%;
+    }
+        
+    
 }
