@@ -36,8 +36,8 @@ $(".menu-icon").on("click",function(){
 // 輪播
 
 
-$(".card:last-child").clone().prependTo(".card-group")
-$(".card").eq(1).clone().appendTo(".card-group")
+// $(".card:last-child").clone().prependTo(".card-group")
+// $(".card").eq(1).clone().appendTo(".card-group")
 
 let currentSlideOffset = -320
 
