@@ -34,11 +34,6 @@ $(".menu-icon").on("click",function(){
 })//menu-btn click end
 
 // 輪播
-
-
-// $(".card:last-child").clone().prependTo(".card-group")
-// $(".card").eq(1).clone().appendTo(".card-group")
-
 let currentSlideOffset = -320
 
 function next(){
@@ -47,17 +42,15 @@ function next(){
     console.log(currentSlideOffset);
     //    第二層左邊界位移數字等同於currentSlideOffset
 
-    //輪播的座標數字不等於-5700
-    if(currentSlideOffset != -1200){
+    //輪播的座標數字不等於-??
+    if(currentSlideOffset != -640){
         $(".card-group").animate({"margin-left": currentSlideOffset},400)
 
     }else{
-        //callback
+        // callback
         $(".card-group").animate({"margin-left": currentSlideOffset},400,function(){
-            //動畫執行完才執行
-            $(".card-group").css({"margin-left":-320})
         })
-        currentSlideOffset = -320
+        currentSlideOffset = 0
     }//if currentSlideOffset end 
 }//#next click end
 
@@ -68,9 +61,9 @@ function prev(){
    
     if (currentSlideOffset == 0){
         $(".card-group").animate({"margin-left": currentSlideOffset},400,function(){
-            $(".card-group").css({"margin-left":-1200})
+            $(".card-group").css({"margin-left":0})
         })//$(".slide_content").animate end
-        currentSlideOffset = -1200
+        currentSlideOffset = 320
     }else{
         $(".card-group").animate({"margin-left": currentSlideOffset },400)     
     }
@@ -86,12 +79,4 @@ $("#prev").on("click",function(){
     prev()
 })//#prev click end
 
-//loop function
-function loop(){
-    //放了setInterval計時器，依照間隔秒數執行
-    setInterval(function(){
-        next()
-    },4000)
-}//loop() end
-// loop()
 
