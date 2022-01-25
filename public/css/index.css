@@ -104,6 +104,7 @@ h2 {
     padding-bottom: 10px;
     font-weight: 100;
     line-height: 2.5rem;
+    color:#3c201f;
 }
 
 h3 {
@@ -135,7 +136,7 @@ header>.container {
     flex-wrap: wrap;
 }
 
-.logo {
+/* .logo {
     height: 60px;
     width: 70%;
     background-image: url(../images/lovemologo-web.svg);
@@ -146,6 +147,11 @@ header>.container {
 
 .logo>a{
     display: block;
+} */
+
+.logo img{
+    height: 50px;
+    padding:5px 0 0 10px;
 }
 
 .menu-icon {
@@ -217,17 +223,15 @@ nav a {
 
 
 /* 服務說明 */
+
 #serbox .txtbox {
     text-align: start;
 }
 
-#serbox .imgbox {
+#serbox img {
     width: 100%;
 }
 
-#serbox .imgbox>img {
-    width: 100%;
-}
 
 
 /* 美容小教室 */
@@ -313,13 +317,18 @@ button a::after {
         justify-content: space-between;
     }
 
-    .logo {
+    /* .logo {
         height: 90px;
         width: 30%;
         background-image: url(../images/lovemologo-web.svg);
         background-size: 90%;
         background-repeat: no-repeat;
         background-position: left center;
+    } */
+
+    .logo{
+        height: 80px;
+        padding: 10px 0 0 10px;
     }
 
     .menu-icon {
@@ -347,8 +356,16 @@ button a::after {
         justify-content: space-between;
     }
 
-    .lovemo .imgbox,.lovemo .txtbox {
+    /* .lovemo .imgbox,.lovemo .txtbox {
         max-width: 35%;
+    } */
+
+    /* .mapgroup{
+        display: flex;
+    } */
+
+    .txtbox{
+        width: 65%;
     }
     .featurebox>.container{
         align-items: center;
@@ -382,17 +399,13 @@ button a::after {
         justify-content: space-between;
     }
     #serbox .txtbox {
-        min-width: 45%;
+        width: 45%;
+        padding: 0 20px;
     }
 
-    #serbox .imgbox {
-        min-width: 45%;
+    #serbox img {
+        width: 50%;
     }
-
-    #serbox .imgbox>img {
-        min-width: 50%;
-    }
-
 
     #service{
         display: flex;
@@ -471,7 +484,7 @@ button a::after {
         border:none;
         background: transparent;
         cursor: pointer;
-        background-color: #373839;
+        background-color: #3c201f;
         color:white;
     }
     
@@ -725,4 +738,5 @@ span{
     .article-bt>.box1{
         text-align: end;
     
+}
 }
