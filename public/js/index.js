@@ -1,4 +1,4 @@
-
+new WOW().init();
 $(window).scroll(function(){
     if( $(window).scrollTop() > 30 ){
       $("header").addClass("active")
@@ -33,16 +33,23 @@ $(".menu-icon").on("click",function(){
     }
 })//menu-btn click end
 
+$("#search-btn").on("click",function(){
+    if ($(this).hasClass("active")){
+        $(this).removeClass("active")
+        $("#searchbar-nav").slideToggle()
+    }else{
+        $(this).addClass("active")
+        $("#searchbar-nav").slideToggle()
+    }
+})//menu-btn click end
+
 // 輪播
-let currentSlideOffset = -320
+let currentSlideOffset = 0
 
 function next(){
-    // 輪播的座標累減子項目寬度
     currentSlideOffset = currentSlideOffset - 320
     console.log(currentSlideOffset);
-    //    第二層左邊界位移數字等同於currentSlideOffset
 
-    //輪播的座標數字不等於-??
     if(currentSlideOffset != -640){
         $(".card-group").animate({"margin-left": currentSlideOffset},400)
 
@@ -55,7 +62,6 @@ function next(){
 }//#next click end
 
 function prev(){
-    // 輪播的座標累加子項目寬度
     currentSlideOffset = currentSlideOffset + 320
     console.log(currentSlideOffset)
    
@@ -63,7 +69,7 @@ function prev(){
         $(".card-group").animate({"margin-left": currentSlideOffset},400,function(){
             $(".card-group").css({"margin-left":0})
         })//$(".slide_content").animate end
-        currentSlideOffset = 320
+        currentSlideOffset = -640
     }else{
         $(".card-group").animate({"margin-left": currentSlideOffset },400)     
     }

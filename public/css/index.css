@@ -690,6 +690,11 @@ img.blogimg{
 .searchbar{
     background-color: #d2a36b;
     text-align: center;
+    padding:15px 0;
+}
+
+#searchbar-nav>li{
+    padding:10px 0;
 }
 
 .searchbar>h3{
