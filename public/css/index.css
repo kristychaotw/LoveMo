@@ -78,6 +78,10 @@ footer p {
     text-align: center;
 }
 
+iframe{
+    filter: brightness(.9)
+}
+
 .container-fluid {
     width: 100%;
     max-width: 1440px;
@@ -232,7 +236,32 @@ nav a {
     width: 100%;
 }
 
+/* 價目表 */
+.imgfull{
+    display:none;
+   }
 
+.imgfull>img{
+    width: 100%;
+}
+.imgmobile>img{
+    width: 100%;
+    border: 1px solid #d2a36b;
+}
+ 
+.imgmobile{
+   display:block;
+  }
+ 
+ @media screen and (min-width: 768px){
+   .imgfull{
+    display:block;
+   }
+ 
+   .imgmobile{
+    display:none;
+   }
+ }
 
 /* 美容小教室 */
 .card {
@@ -429,9 +458,10 @@ button a::after {
     .imgboxprice{
         width: 100%;
     }
-    #pricepic{
+    /* #pricepic{
         width: 100%;
-    }
+    } */
+
 
     /* 預約 */
     #reservation{

@@ -12,12 +12,12 @@ $(window).resize(function(){
     if( $(window).width() >= 768 ){
         // 當視窗寬度大於等於768時執行
         $("#pri-nav").css({"display":"flex"})
-        $("#pricepic").attr("src","public/images/priceweb.jpg")
+        // $("#pricepic").attr("src","public/images/priceweb.jpg")
     }else{
         // 當視窗寬度小於768時執行
         $("#pri-nav").css({"display":"block"})
         $("#pri-nav").hide()
-        $("#pricepic").attr("src","public/images/price.jpg")
+        // $("#pricepic").attr("src","public/images/price.jpg")
 
        
     }
