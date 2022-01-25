@@ -511,11 +511,12 @@ button a::after {
     }
 
     .cardslide{
-        width: 90%;
+        /* width: 90%; */
         max-width: 1140px;
         overflow: hidden;
         position: relative;
         padding-bottom: 60px;
+        margin:auto;
     }
     
     .card-group{
