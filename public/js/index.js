@@ -42,44 +42,34 @@ $("#search-btn").on("click",function(){
         $("#searchbar-nav").slideToggle()
     }
 })//menu-btn click end
-
-// 輪播
 let currentSlideOffset = 0
 
 function next(){
     currentSlideOffset = currentSlideOffset - 320
-    console.log(currentSlideOffset);
-
-    if(currentSlideOffset != -640){
+    if (currentSlideOffset != -960){
         $(".card-group").animate({"margin-left": currentSlideOffset},400)
-
     }else{
-        // callback
         $(".card-group").animate({"margin-left": currentSlideOffset},400,function(){
+            $(".card-group").css({"margin-left": 0})
         })
         currentSlideOffset = 0
-    }//if currentSlideOffset end 
-}//#next click end
+    }
+}
 
 function prev(){
     currentSlideOffset = currentSlideOffset + 320
-    console.log(currentSlideOffset)
-   
-    if (currentSlideOffset == 0){
+    if (currentSlideOffset < 0){
+        $(".card-group").animate({"margin-left": currentSlideOffset},400)    
+    }else{
         $(".card-group").animate({"margin-left": currentSlideOffset},400,function(){
             $(".card-group").css({"margin-left":0})
-        })//$(".slide_content").animate end
-        currentSlideOffset = -640
-    }else{
-        $(".card-group").animate({"margin-left": currentSlideOffset },400)     
+        })
+        currentSlideOffset = 0
     }
+}
 
-}//#prev click end
-
-
-//按鈕事件，要放入click&計時器
 $("#next").on("click",function(){
-    next()
+   next()
 })//#next click end
 $("#prev").on("click",function(){
     prev()
