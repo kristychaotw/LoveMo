@@ -612,7 +612,7 @@ span{
 }
 
 
-/* 分頁-文章內容 */
+/* 分頁-部落格 */
 #card1{
     border: none;
 }
@@ -681,4 +681,48 @@ span{
 
     }
 
+}
+
+/* 文章內容 */
+.article-bt{
+    background-color: #d2a36b;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.article-bt>.box{
+    text-align: start;
+    padding:40px;
+}
+
+.arrow-bt, .arrow-bt2{
+    padding: 0px;
+    margin:0px;
+}
+
+.arrow-bt>img{
+    transform: rotate(90deg);
+}
+
+.arrow-bt2>img{
+    transform: rotate(-90deg);
+}
+.article-bt h3{
+    font-size:0.9rem;
+    color:#fff;
+    padding:0px;
+}
+
+.article-bt p{
+    font-size:1.2rem;
+    color:#373839;
+    font-weight: 500;
+    padding:0px;
+}
+
+@media screen and (min-width:768px) {
+    .article-bt>.box1{
+        text-align: end;
+    
 }
